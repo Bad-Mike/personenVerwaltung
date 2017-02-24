@@ -2,8 +2,11 @@ package personenVerwaltung;
 
 public class Person {
 	
+	//default constructor
+	Person() { }
+	
 	//name
-	private String name;
+	public String name;
 
 	public String getName() {
 		return name;
@@ -14,7 +17,7 @@ public class Person {
 	}
 	
 	//vorname
-	private String vorname;
+	public String vorname;
 
 	public String getVorname() {
 		return vorname;
@@ -30,8 +33,9 @@ public class Person {
 		this.vorname = vorname;
 	}
 	
-	//toString Methode
+	//toString method
 	public String toString() {
 		return String.format("Name: %s, Vorname: %s", name, vorname);
 	}
+
 }

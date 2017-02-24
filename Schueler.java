@@ -2,8 +2,11 @@ package personenVerwaltung;
 
 public class Schueler {
 	
+	//default constructor
+	Schueler() { }
+	
 	//klasse
-	private String klasse;
+	public String klasse;
 
 	public String getKlasse() {
 		return klasse;
@@ -14,7 +17,7 @@ public class Schueler {
 	}
 	
 	//ausbildungsjahr
-	private int ausbildungsjahr;
+	public int ausbildungsjahr;
 
 	public int getAusbildungsjahr() {
 		return ausbildungsjahr;
@@ -30,7 +33,7 @@ public class Schueler {
 		this.ausbildungsjahr = ausbildungsjahr;
 	}
 	
-	//toString Methode
+	//toString method
 	public String toString() {
 		return String.format("Klasse: %s, Ausbildungsjahr: %s", klasse, ausbildungsjahr);
 	}

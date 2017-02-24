@@ -2,8 +2,11 @@ package personenVerwaltung;
 
 public class Lehrer {
 	
+	//default constructor
+	Lehrer() { }
+	
 	//lname
-	private String lname;
+	public String lname;
 
 	public String getlName() {
 		return lname;
@@ -14,7 +17,7 @@ public class Lehrer {
 	}
 		
 	//fach
-	private String fach;
+	public String fach;
 
 	public String getFach() {
 		return fach;
@@ -30,7 +33,7 @@ public class Lehrer {
 		this.fach = fach;
 	}
 	
-	//toString Methode
+	//toString method
 	public String toString() {
 		return String.format("Lehrer: %s, Fach: %s", lname, fach);
 	}

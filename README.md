@@ -1,2 +1,4 @@
 # personenVerwaltung
-toString, get- and set-method 
+toString
+get- and set-method 
+default constructor

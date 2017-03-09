@@ -18,15 +18,20 @@ public class Personenverwaltung {
 		//input default constructor
 		Person person3 = new Person();
 		//wird überschrieben
-		//input set- and get
+		//input set
 		person3.setName("Schmidt");				//overwrite
-		//person3.setVorname("Peter");			//Auskommentiert wird es nicht überschrieben
+	//	person3.setVorname("Peter");			//Auskommentiert wird es nicht überschrieben
+		
 		Schueler schueler3 = new Schueler();
 		schueler3.setName("Kahn");
 		schueler3.setVorname("Jens");
 		schueler3.setKlasse("IT4a");
 		schueler3.setAusbildungsjahr(3);
+		
 		Lehrer lehrer3 = new Lehrer();
+	//	lehrer3.setName("Dittmer");
+	//	lehrer3.setVorname("Klaus");
+	//	lehrer3.setFach("IT");
 		
 		
 		//output toSting

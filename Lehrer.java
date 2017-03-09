@@ -1,41 +1,41 @@
 package personenVerwaltung;
 
-public class Lehrer {
+public class Lehrer extends Person{
 	
+	String fach;
+
 	//default constructor
-	Lehrer() { }
+	Lehrer() {
+		this.fach = "<keinFach>";
+	}
 	
-	//lname
-	public String lname;
-
-	public String getlName() {
-		return lname;
+	//constrictor with parameter
+	Lehrer(String fach) {
+		this.fach = fach;
 	}
-
-	public void setName(String lname) {
-		this.lname = lname;
+	
+	//constructor for toString
+	Lehrer(String name, String vorname, String fach) {
+		super (name, vorname);
+		this.fach = fach;
 	}
-		
+	
 	//fach
-	public String fach;
-
-	public String getFach() {
+	/*public String getFach() {
 		return fach;
-	}
+	}*/
 
 	public void setFach(String fach) {
 		this.fach = fach;
 	}
 	
-	//this
-	Lehrer (String lname, String fach) {
-		this.lname = lname;
-		this.fach = fach;
+	public String kennung(){
+		return "Lehrerkennung";
 	}
 	
 	//toString method
 	public String toString() {
-		return String.format("Lehrer: %s, Fach: %s", lname, fach);
+		return super.toString() + " Fach: " + fach;
 	}
 
 }
